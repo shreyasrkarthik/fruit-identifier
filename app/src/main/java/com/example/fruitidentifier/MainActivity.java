@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
         questionImage = findViewById(R.id.questionImage);
         // Load image from the web URL using Glide
+        String imagePath = "fruits/apples.jpg"; // Replace with your image's path in Firebase Storage
+        FirebaseStorageUtils.loadImageIntoView(this, imagePath, questionImage);
+
 
         option1 = findViewById(R.id.option1);
         option2 = findViewById(R.id.option2);
